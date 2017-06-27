@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+! 注意 !
+ 在這裡使用ImageView , ImageButon都不能正確顯示圖片
+ 最方便的方法就是使用TextView 設定Background來達到目的。
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@+id/svCameraScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.foyatech.zxing.zxing.view.ViewfinderView
+        android:id="@+id/vfvCameraScan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 必须在最底层，且不能指定宽高，否则扫描读取很难实现 -->
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+
+        <Button
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_custom1"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+

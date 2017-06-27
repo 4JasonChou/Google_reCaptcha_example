@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView android:id="@+id/fragment_forum_ForumImage"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/fragment_forum_ForumDes" />
+
+    <TextView android:id="@+id/fragment_forum_ForumTitle"
+        android:text="各版名稱"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fragment_forum_ForumImage"
+        android:layout_toEndOf="@+id/fragment_forum_ForumImage" />
+
+    <TextView android:id="@+id/fragment_forum_ForumDes"
+        android:text="各版敘述"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/fragment_forum_ForumTitle"
+        android:layout_toRightOf="@+id/fragment_forum_ForumImage"
+        android:layout_toEndOf="@+id/fragment_forum_ForumImage" />
+
+</RelativeLayout>

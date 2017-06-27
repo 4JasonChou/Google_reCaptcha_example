@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foyatech.foya.view.Fragment_reCaptcha">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="I'm not bot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recaptcha_button"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/recaptcha_ttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reCaptcha"
+            android:layout_marginBottom="56dp"
+            android:layout_alignBottom="@+id/recaptcha_button"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recaptcha_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:id="@+id/recaptcha_result" />
+
+    </RelativeLayout>
+
+</FrameLayout>

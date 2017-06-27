@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foyatech.foya.view.Fragment_Forum">
+
+    <!--  如果需要刷新 將ListView放置裏頭並且前往Fragment加血刷新Func
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scan_invoice_scanInvice_ListView_swipe_promotion_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+        -->
+    <ListView android:id="@+id/fragment_forum_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+    />
+
+</FrameLayout>
